@@ -1,0 +1,130 @@
+/* Footer - Warm Golden Theme */
+.footer-root {
+  background: #FFF7EA; /* Same soft cream as header */
+  color: #5A3D2B; /* Deep warm brown */
+  padding-top: 2.5rem;
+  box-shadow: 0 -2px 12px rgba(244, 181, 68, 0.18);
+}
+
+/* Footer Layout */
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem 2rem 2rem;
+  flex-wrap: wrap;
+}
+
+/* Footer Brand */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #F4B544; /* Warm golden title */
+}
+
+.footer-brand img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.footer-links a {
+  color: #5A3D2B; /* Deep warm brown */
+  opacity: 0.85;
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: 0.25s;
+  padding: 0.3rem 0.7rem;
+  border-radius: 1rem;
+}
+
+.footer-links a:hover {
+  color: #F4B544; /* Warm golden hover */
+  background: rgba(244, 181, 68, 0.18);
+}
+
+/* Donate Button */
+.footer-donate-btn {
+  background: linear-gradient(90deg, #F4B544 0%, #E8924C 100%); /* same as header */
+  color: #5A3D2B !important;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 2rem;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 8px rgba(244, 181, 68, 0.35);
+  transition: 0.25s;
+  margin-left: 1rem;
+}
+
+.footer-donate-btn:hover {
+  background: #FFCB6B; /* brighter highlight */
+  color: #5A3D2B !important;
+  transform: translateY(-2px);
+}
+
+/* Social Icons */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: sepia(0.6) hue-rotate(10deg) saturate(1.3) brightness(0.9); 
+  transition: 0.25s;
+}
+
+.footer-social a:hover img {
+  filter: sepia(0.8) hue-rotate(20deg) saturate(1.6) brightness(1);
+}
+
+/* Bottom strip */
+.footer-bottom {
+  text-align: center;
+  padding: 1rem 0;
+  background: #FDEBCF; /* Slightly deeper cream shade */
+  color: #5A3D2B;
+  font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .footer-links {
+    gap: 0.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-brand span {
+    font-size: 1rem;
+  }
+
+  .footer-links a,
+  .footer-donate-btn {
+    font-size: 0.95rem;
+    padding: 0.4rem 1rem;
+  }
+}

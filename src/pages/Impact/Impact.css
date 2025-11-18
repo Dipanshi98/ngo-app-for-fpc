@@ -1,0 +1,194 @@
+/* Impact page - Smile Foundation inspired */
+.impact-root {
+  background: #f9fafb;
+  min-height: 100vh;
+}
+
+.impact-hero {
+  background: linear-gradient(90deg, #0284c7 0%, #16a34a 100%);
+  color: #fff;
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+}
+.impact-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.impact-subtitle {
+  font-size: 1.2rem;
+  color: #e0e7ef;
+}
+
+.impact-stats-section {
+  background: #fff;
+  padding: 2.5rem 0;
+}
+.impact-stats-list {
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.impact-stats-item {
+  background: #f3f4f6;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(2,132,199,0.08);
+  text-align: center;
+  padding: 1.2rem 1rem;
+  min-width: 140px;
+}
+.impact-stats-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  display: block;
+  background: linear-gradient(90deg, #0B8B87, #E7A315);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.impact-stats-label {
+  font-size: 1rem;
+  color: #374151;
+}
+
+.impact-stories-section {
+  background: #f9fafb;
+  padding: 3rem 0;
+}
+.impact-stories-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(90deg, #056B68, #C28C12); /* darker teal + gold */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.impact-stories-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.impact-story-card {
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 2px 12px rgba(2,132,199,0.08);
+  text-align: center;
+  padding: 2rem 1.2rem 1.5rem 1.2rem;
+  min-width: 220px;
+  max-width: 260px;
+  margin-bottom: 1.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.impact-story-card:hover {
+  box-shadow: 0 6px 24px rgba(2,132,199,0.18);
+  transform: translateY(-4px);
+}
+.impact-story-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #15803D, #84CC16);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+
+}
+
+.impact-story-card p {
+  color: #374151;
+  font-size: 1rem;
+}
+
+.impact-gallery-section {
+  background: #fff;
+  padding: 3rem 0;
+}
+.impact-gallery-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  background: linear-gradient(90deg, #056B68, #C28C12); /* darker teal + gold */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.impact-gallery-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.impact-gallery-img {
+  width: 180px;
+  height: 120px;
+  border-radius: 1rem;
+  object-fit: cover;
+  background: #e0e7ef;
+  box-shadow: 0 2px 8px rgba(2,132,199,0.08);
+}
+
+.impact-cta-section {
+  background: #E6EDD6; /* soft light olive */
+  color: #4A5A2C; /* deep olive text */
+  padding: 3rem 0;
+  text-align: center;
+  border-top: 3px solid #A7B98A; /* medium olive border */
+  border-bottom: 3px solid #A7B98A;
+}
+
+.impact-cta-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #056B68; /* darker teal/olive */
+}
+
+.impact-cta-desc {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  color: #3C4F1F; /* slightly muted olive */
+}
+
+.impact-cta-btn {
+  display: inline-block;
+  background: #F4F7EC; /* soft olive button background */
+  color: #056B68; /* darker teal/olive text */
+  font-weight: 700;
+  padding: 0.9rem 2.2rem;
+  border-radius: 2rem;
+  font-size: 1.15rem;
+  box-shadow: 0 4px 16px rgba(5,107,104,0.15); /* subtle shadow in olive/teal */
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.impact-cta-btn:hover {
+  background: #056B68; /* dark teal/olive hover */
+  color: #F4F7EC; /* light text on hover */
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .impact-stats-list, 
+  .impact-stories-list, 
+  .impact-gallery-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .impact-title {
+    font-size: 1.5rem;
+  }
+  .impact-cta-title {
+    font-size: 1.3rem;
+  }
+}

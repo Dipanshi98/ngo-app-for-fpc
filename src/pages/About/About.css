@@ -1,0 +1,318 @@
+/* ROOT WRAPPER */
+.about-root {
+  background: #f9fafb;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* -------------------------------------
+   HERO SECTION
+--------------------------------------- */
+
+.about-hero {
+  background: linear-gradient(90deg, #0284c7, #0369a1);
+  color: #fff;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.about-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.about-subtitle {
+  font-size: 1.2rem;
+  color: #e0e7ef;
+}
+
+/* -------------------------------------
+   MODERN MISSION / VISION / STORY
+--------------------------------------- */
+/* Modern Section Wrapper */
+.about-section-modern {
+  padding: 4rem 0 5rem 0;
+  background: #FFF7EA; /* soft warm cream */
+}
+
+/* Grid Layout */
+.about-section-modern .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.mv-card-updated {
+  background: #ffffff;
+  padding: 2.3rem 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(244, 181, 68, 0.15);
+  border: 1px solid rgba(244, 181, 68, 0.25);
+  transition: 0.3s ease;
+}
+
+.mv-card-updated:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(244, 181, 68, 0.25);
+}
+
+/* Icons */
+.mv-icon-updated {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #F4B544, #E8924C);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* Titles */
+.mv-card-updated h2,
+.story-modern-updated h2 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  color: #5A3D2B;
+  margin-bottom: 1rem;
+}
+
+/* Paragraphs */
+.mv-card-updated p,
+.story-modern-updated p {
+  font-size: 1.15rem;
+  color: #6d4c3c;
+  line-height: 1.7;
+}
+
+/* Story Section */
+.story-modern-updated {
+  grid-column: span 2;
+  background: #ffffff;
+  padding: 2.8rem 2.4rem;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(244, 181, 68, 0.18);
+  border-left: 6px solid #F4B544;
+  transition: 0.3s;
+}
+
+.story-modern-updated:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(244, 181, 68, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-section-modern .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* -------------------------------------
+   MODERN TIMELINE
+--------------------------------------- */
+.about-timeline-modern {
+  background: #FFF7EA; /* Warm soft golden background */
+  padding: 4rem 0;
+}
+
+.modern-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #5A3D2B; /* Deep warm brown */
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.modern-heading::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: #F4B544; /* Golden */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -12px;
+  border-radius: 5px;
+}
+
+.timeline-container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  position: relative;
+}
+
+.timeline-card {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+}
+
+/* Updated circle size + golden theme */
+.timeline-year-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #fff8ec;
+  border: 4px solid #F4B544;
+  font-size: 1rem; /* slightly smaller to fit long text */
+  font-weight: 700;
+  color: #5A3D2B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;      /* <-- makes text centered */
+  padding: 15px;           /* <-- so long text doesn't touch edges */
+  line-height: 1.2;        /* clean spacing */
+  box-shadow: 0 5px 18px rgba(244, 181, 68, 0.25);
+  word-wrap: break-word;   /* ensures text stays inside */
+}
+
+.timeline-content-box {
+  background: white;
+  padding: 22px 28px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(244, 181, 68, 0.18);
+  max-width: 650px;
+}
+
+.timeline-content-box p {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #5A3D2B; /* Warm brown text */
+}
+
+/* Connecting line updated to golden */
+.timeline-line {
+  position: absolute;
+  left: 70px; /* adjusted because circle is bigger */
+  top: 150px;
+  width: 4px;
+  height: 80%;
+  background: #F4B544;
+  border-radius: 6px;
+}
+
+/* TIMELINE RESPONSIVE */
+@media (max-width: 900px) {
+  .timeline-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .timeline-line {
+    left: 50%;
+  }
+
+  .timeline-content-box {
+    max-width: 90%;
+  }
+}
+
+/* -------------------------------------
+   CTA SECTION
+--------------------------------------- */
+
+/* ABOUT PAGE CTA – OLIVE GREEN THEME */
+.about-cta-section {
+  background: #F4F7EC; /* soft light olive */
+  color: #4A5A2C; /* deep olive */
+  padding: 3.5rem 0;
+  text-align: center;
+  border-top: 3px solid #A7B98A;
+  border-bottom: 3px solid #A7B98A;
+}
+
+.about-cta-btn {
+  display: inline-block;
+  background: #fff;
+  color: #708238; /* olive green */
+  font-weight: 700;
+  padding: 0.9rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.15rem;
+  border: 2px solid #708238; /* olive border */
+  transition: 0.25s;
+}
+
+.about-cta-btn:hover {
+  background: #708238; /* olive fill */
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* FORCE SINGLE COLUMN STACK DESIGN */
+.single-block {
+  max-width: 1200px;
+  margin: 0 auto 2rem auto;
+}
+
+/* Reduce spacing between stacked cards */
+.about-section-modern {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.single-block h2 {
+  font-size: 1.8rem;
+  color: #4A5A2C; /* deep olive */
+}
+
+.single-block p {
+  font-size: 1.1rem;
+  color: #5B6B32; /* medium olive */
+}
+
+
+/* -------- IMAGE HERO SECTION -------- */
+
+.about-hero-image {
+  position: relative;
+  width: 100%;
+  height: 800px; /* match your image ratio */
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Slight blur effect */
+.blurred-image {
+  filter: blur(3px) brightness(0.85);
+  transform: scale(1.05); /* prevents edges from showing */
+}
+
+/* Text Overlay */
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+  color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #FFF7EA; /* Warm golden yellow */
+  text-shadow: 0px 2px 6px rgba(0,0,0,0.45);
+}
+
+.hero-subtitle {
+  font-size: 22px;
+  margin-top: 10px;
+  font-weight: 300;
+  color: #E8924C; /* Soft warm white */
+  opacity: 0.95;
+  text-shadow: 0px 2px 5px rgba(0,0,0,0.40);
+}
