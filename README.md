@@ -4,7 +4,7 @@ A comprehensive, professional NGO website built with React, Vite, and Tailwind C
 
 ## ✨ Features
 
-- ✅ **8 Complete Pages** - Home, About, Programs, Donate, Contact, Impact, Team, Blog
+- ✅ **7 Complete Pages** - Home, About, Programs, Donate, Contact, Impact, Team
 - ✅ **Fully Responsive** - Mobile, Tablet, Desktop optimized
 - ✅ **Modern Styling** - Tailwind CSS + Custom CSS with animations
 - ✅ **React Router** - Smooth client-side navigation
